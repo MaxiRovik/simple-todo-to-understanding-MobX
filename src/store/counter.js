@@ -3,6 +3,7 @@ import  {makeAutoObservable} from 'mobx';
 class Counter {
 
     constructor(){
+        this.baseCount = 2;
         this.count = 0;
         makeAutoObservable(this);
     }
@@ -17,6 +18,11 @@ class Counter {
         this.count = this.count -1
         console.log('decrement', this.count)
     };
+
+    get total() {
+        return `Sum ${this.baseCount +  this.count}`
+    }
+
 
 }
 

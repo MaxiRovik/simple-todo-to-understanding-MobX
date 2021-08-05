@@ -2,10 +2,13 @@
     display: block;
     width:33vw;
     height:100vh;
-    background-color: #56b4d9;
+    background-color: #94e3fc;
     position: absolute;
+  border: solid 2px #000000;
+    border-radius: 5px;
     left: 33vw;
     padding:30px;
+    overflow: hidden;
 
 }
 .counter{
@@ -18,13 +21,14 @@
     border: solid 2px white;
     justify-content: center;
     align-items: center;
+
 }
 .btns{
 display: block;
 }
 .btn  {
     display: block;
-    background-color: #becbc0;
+    background-color: #1bcbde;
     width:50px;
     height:50px;
     margin:20px;
@@ -33,6 +37,36 @@ display: block;
     box-shadow: 10px 5px 5px black ;
     cursor: pointer;
 }
-.btn:active {
-   transform: scale(0.9)
+.btn:active  {
+    transform: scale(0.9)
+}
+
+.todo {
+    border: solid 2px black;
+    position: relative;
+    display:block;
+    background-color: #1bcccd;
+    font-size: 20px;
+    padding: 5px;
+    width: 90%;
+    height: 35px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.del {
+    width:20px;
+    height:20px;
+    background-color: #d03423;
+    padding:2px;
+    color:white;
+    font-size: 12px;
+    position: absolute;
+    top:10px;
+    right:5px;
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+.del:active {
+    transform: scale(0.9)
 }
